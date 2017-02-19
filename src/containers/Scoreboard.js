@@ -28,7 +28,7 @@ class Scoreboard extends Component {
           updatePlayerScore={updatePlayerScore}
           removePlayer={removePlayer}
         />
-    );
+    ));
 
     return (
       <div className="scoreboard">
@@ -43,7 +43,7 @@ class Scoreboard extends Component {
 }
 
 const mapStateToProps = state => {
-  {
+  return {
     players: state
   }
 }
