@@ -30,7 +30,7 @@ export default function Player(state=initialState, action){
       return [
         ...state.slice(0, action.index),
         ...state.slice(action.index + 1)
-      ]
+      ];
 
     case PlayerActionTypes.UPDATE_PLAYER_SCORE:
       return state.map((player, index) => {
@@ -43,7 +43,7 @@ export default function Player(state=initialState, action){
         return player;
       });
 
-      default:
-        return state;
+    default:
+      return state;
   }
 }
