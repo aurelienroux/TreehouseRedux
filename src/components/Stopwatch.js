@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 export default class Stopwatch extends Component {
   state = {
     running: false,
-    previouseTime: 0,
+    previousTime: 0,
     elapsedTime: 0,
   };
 
